@@ -3,6 +3,9 @@
 baemetal OS (64bits) to investigate KVM KSM memory pages deduplication resistance over 
 side channel attack (cache-time driven attack).
 
+ - [x] GDT
+ - [ ] timer
+ - [ ] RDTSC counter
 
 ## Build
 
