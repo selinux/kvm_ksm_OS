@@ -3,3 +3,6 @@ build/**
 **/*.o
 **/*.d
 **/*.elf
+
+/fs.img
+/yoctos.iso
