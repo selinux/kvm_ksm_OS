@@ -82,7 +82,17 @@ void print_set_color(uint8_t foreground, uint8_t background) {
     color = foreground + (background << 4);
 }
 
-void _putc(unsigned char c) { print_char((char)c); }
+void _putc(unsigned char c) {
+    if ((char)c == '\t'){
+        col +=4;
+//        print_char(' ');
+//        print_char(' ');
+//        print_char(' ');
+//        print_char(' ');
+    }
+    else
+        print_char((char)c);
+}
 
 void printf(const char* fmt, ...)
 {
